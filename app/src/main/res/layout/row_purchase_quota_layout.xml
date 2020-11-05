@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/d15"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITEM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20" />
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE"
+                android:textColor="@color/red"
+                android:textSize="@dimen/s12" />
+        </LinearLayout>
+
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="Description"
+            android:visibility="gone"
+            />
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Aktif 30 Hari"/>
+    </LinearLayout>
+
+</LinearLayout>

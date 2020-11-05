@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/transaction_row_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"><!-- Bottom View Start-->
+        <FrameLayout
+            android:id="@+id/user_feed_row_bottom"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/red_alert"
+            android:weightSum="1">
+            <!--What you want to show-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_trash" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Hapus" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/d15"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/d50"
+                    android:id="@+id/icon_transaction"
+                    android:layout_height="@dimen/d50"
+                    android:src="@drawable/iconpenjualan"
+                    android:padding="@dimen/d8"
+                    android:layout_marginRight="@dimen/d10"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/transaction_id"
+                            android:layout_marginEnd="@dimen/d10"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/s20"
+                            android:text="123456"/>
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                            android:id="@+id/amount_transaction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/nice_blue"
+                            android:textSize="@dimen/s20"
+                            android:text="Rp 50.000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Green"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textSize="@dimen/s14"
+                            android:id="@+id/status_transaction"
+                            android:text="BERHASIL"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/time_transaction"
+                            android:textColor="@color/gray.primary_dark"
+                            android:textSize="@dimen/s12"
+                            android:text="14:04"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Surface View End -->
+    </LinearLayout>
+</LinearLayout>

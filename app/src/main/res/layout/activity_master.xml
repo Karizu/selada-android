@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="@dimen/d10">
+
+                <ImageView
+                    android:id="@+id/image_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mireta_bg" />
+
+                <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelola seluruh data Bisnis anda disini!"
+                    android:textColor="@color/mireta_blue"
+                    android:textSize="@dimen/d16"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+
+
+            <Button
+                android:id="@+id/profil_toko_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="PROFIL TOKO"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/brand_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="BRAND (MEREK)"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/kategori_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="KATEGORI"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/tambah_barang_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="TAMBAH BARANG"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/inventory_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="KATALOG"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/trx_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:visibility="gone"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="HISTORY TRANSAKSI"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/laporan_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="LAPORAN"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"/>
+
+            <Button
+                android:id="@+id/test_printer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginBottom="@dimen/d5"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="4"
+                android:autoSizeMaxTextSize="@dimen/s14"
+                android:autoSizeMinTextSize="@dimen/s10"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/border_round_gradient_8dp"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="PRINTER TEST"
+                android:textColor="@color/white"
+                android:textSize="@dimen/s14"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

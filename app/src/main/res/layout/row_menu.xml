@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="9dp"
+    android:layout_marginTop="@dimen/d4"
+    android:layout_marginBottom="@dimen/d4"
+    android:background="@drawable/bcg_menu2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/d8">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Icon Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_pulsa"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+        android:id="@+id/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:paddingBottom="6dp"
+        android:text="Multipayment"
+        android:textColor="#000"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        tools:targetApi="jelly_bean"
+        tools:ignore="HardcodedText,SmallSp" />
+
+</LinearLayout>

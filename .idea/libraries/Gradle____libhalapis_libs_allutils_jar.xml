@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libhalapis/libs/allutils.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libhalapis/libs/allutils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

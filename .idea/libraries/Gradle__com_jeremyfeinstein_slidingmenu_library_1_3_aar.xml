@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jeremyfeinstein.slidingmenu:library:1.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48d165938d886a071d7108fa63d9589c/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48d165938d886a071d7108fa63d9589c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48d165938d886a071d7108fa63d9589c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jeremyfeinstein.slidingmenu/library/1.3/fc3e0593309eaf2fc95ceec3f66866cceafb6cda/library-1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

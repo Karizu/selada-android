@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_round_white"
+                android:orientation="vertical"
+                android:padding="@dimen/d16">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nasi Uduk Ayam Bakar"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mireta_blue"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/d16">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgBarang"
+                    android:layout_width="@dimen/d150"
+                    android:layout_height="@dimen/d100"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_default"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/btnRefresh"
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:layout_gravity="center"
+                    android:src="@drawable/refresh_btn_nav"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Details"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+
+                <EditText
+                    android:id="@+id/etNamaBarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Nama Barang"
+                    android:paddingStart="@dimen/d16"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/etDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Deskripsi"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerMerek"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerKategori"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/etSubKategori"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/etKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Minuman"
+                    android:gravity="left|center_vertical"
+                    android:paddingStart="@dimen/d16"
+                    android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                    android:paddingEnd="@dimen/d8"
+                    android:textAllCaps="false"
+                    android:editable="false"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/etHargaPieces"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Harga per Pieces"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stok Details"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/tvStok"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d40"
+                        android:layout_weight="3"
+                        android:background="@drawable/border_round_white"
+                        android:text="0"
+                        android:paddingStart="@dimen/d16"
+                        android:paddingEnd="@dimen/d16"
+                        android:paddingTop="@dimen/d10"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageButton
+                        android:id="@+id/btnTambahStok"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d35"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginBottom="@dimen/d8"
+                        android:src="@drawable/add"
+                        android:background="@drawable/background_button"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent" />
+
+                <Switch
+                    android:id="@+id/switchStok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Gray"
+                    android:paddingStart="@dimen/d16"
+                    android:text="Is Daily Stock"
+                    android:visibility="gone"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginBottom="@dimen/d8"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:text="Simpan"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

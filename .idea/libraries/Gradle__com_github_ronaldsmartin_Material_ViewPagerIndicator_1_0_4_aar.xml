@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ronaldsmartin:Material-ViewPagerIndicator:1.0.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04d85f3f8d605c910faa52e92a3aca63/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04d85f3f8d605c910faa52e92a3aca63/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04d85f3f8d605c910faa52e92a3aca63/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/04d85f3f8d605c910faa52e92a3aca63/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

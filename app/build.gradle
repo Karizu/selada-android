@@ -1,0 +1,264 @@
+buildscript {
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+
+
+    repositories {
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://maven.google.com' }
+        maven { url 'http://jzaccone.github.io/SlidingMenu-aar' }
+    }
+
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url 'http://jzaccone.github.io/SlidingMenu-aar' }
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://maven.google.com' }
+    maven { url 'http://jzaccone.github.io/SlidingMenu-aar' }
+}
+
+android {
+    flavorDimensions "productionpampasy"
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.boardinglabs.mireta.selada"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 5
+        versionName "1.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            zipAlignEnabled false
+        }
+        debug {
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            minifyEnabled true
+            zipAlignEnabled false
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(certificateLocation)
+            storePassword certificateStorePassword
+            keyAlias certificateReleaseKeyAlias
+            keyPassword certificateReleaseKeyPassword
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+        }
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false //Important step
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            jniDebuggable true
+        }
+    }
+
+
+    productFlavors {
+        postrelease {
+            buildConfigField "String", "SERVER_URL", String.format("\"%s\"", productionServerURL)
+            buildConfigField "String", "SECRET_ID", String.format("\"%s\"", secretId)
+            buildConfigField "String", "BASE_URL", String.format("\"%s\"", baseUrlMidtrans)
+            buildConfigField "String", "CLIENT_KEY", String.format("\"%s\"", clientKey)
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    packagingOptions {
+
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/rxjava.properties'
+        exclude 'lib/armeabi-v7a/libwizarpos_contact_ic_card.so'
+
+        pickFirst 'lib/mips/libRSSupport.so'
+        pickFirst 'lib/x86/libRSSupport.so'
+        pickFirst 'lib/mips/librsjni.so'
+        pickFirst 'lib/x86/librsjni.so'
+        pickFirst 'lib/armeabi-v7a/libRSSupport.so'
+        pickFirst 'lib/armeabi-v7a/librsjni.so'
+
+        pickFirst 'lib/x86_64/libsqlcipher.so'
+        pickFirst 'lib/armeabi/libsqlcipher.so'
+        pickFirst 'lib/x86/libsqlcipher.so'
+        pickFirst 'lib/armeabi-v7a/libsqlcipher.so'
+        pickFirst 'lib/arm64-v8a/libsqlcipher.so'
+        pickFirst 'lib/armeabi-v7a/libassmidi.so'
+        pickFirst 'lib/x86/libassmidi.so'
+        pickFirst('lib/armeabi-v7a/libDecodeWlt.so')
+        pickFirst 'lib/armeabi-v7a/libwizarpos_contact_ic_card.so'
+        pickFirst 'lib/armeabi-v7a/libwizarpos_contactless_ic_card.so'
+        pickFirst 'lib/armeabi-v7a/libwizarpos_printer.so'
+        pickFirst 'lib/armeabi-v7a/libwizarpos_magnetic_stripe_reader.so'
+        pickFirst 'lib/armeabi-v7a/libwizarpos_pinpad.so'
+        pickFirst 'lib/armeabi-v7a/libEMVKernal.so'
+        pickFirst 'lib/armeabi-v7a/libwizarpos_emv_kernel.so'
+    }
+}
+
+
+ext { libSupportVersion = '27.0.2' }
+ext { libGoogle = '11.4.2' }
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-v4:${libSupportVersion}"
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "com.android.support:appcompat-v7:${libSupportVersion}"
+    implementation "com.android.support:recyclerview-v7:${libSupportVersion}"
+    implementation "com.android.support:design:${libSupportVersion}"
+    implementation "com.android.support:support-v4:${libSupportVersion}"
+    implementation "com.android.support:cardview-v7:${libSupportVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.google.android.gms:play-services:${libGoogle}"
+    implementation "com.google.android.gms:play-services-maps:${libGoogle}"
+    implementation 'io.card:android-sdk:5.4.0'
+    implementation 'com.race604.waveloading:library:1.1.1'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    compileOnly 'org.parceler:parceler:1.1.5'
+    implementation 'org.parceler:parceler-api:1.1.5'
+    annotationProcessor "org.parceler:parceler:1.1.5"
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.andrognito.pinlockview:pinlockview:2.1.0'
+    implementation 'com.alimuzaffar.lib:pinentryedittext:1.3.1'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'
+    implementation('com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3@aar') {
+        transitive = true
+    }
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation('com.squareup.retrofit2:retrofit:2.1.0') {
+        exclude module: 'okhttp'
+    }
+    compileOnly 'org.parceler:parceler:1.1.5'
+    implementation 'org.parceler:parceler-api:1.1.5'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    //implementation 'com.squareup.okhttp3:okhttp:3.4.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+    //implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    implementation 'id.zelory:compressor:1.0.2'
+    implementation('io.socket:socket.io-client:1.0.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.google.firebase:firebase-core:11.4.2'
+    implementation 'com.google.firebase:firebase-messaging:11.4.2'
+    implementation 'org.jsoup:jsoup:1.8.3'
+
+    postreleaseImplementation('com.midtrans:corekit:1.5.1') {
+        exclude module: 'okhttp'
+    }
+    testImplementation 'junit:junit:4.12'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true;
+    }
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    implementation 'com.github.nicolasjafelle:paginglistview:1.2'
+    implementation 'com.github.maayyaannkk:ImagePicker:1.0.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    implementation 'com.github.ronaldsmartin:Material-ViewPagerIndicator:1.0.4'
+    implementation 'com.zopim.android:sdk:1.4.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.hbb20:ccp:2.2.3'
+    implementation 'com.archit.calendar:awesome-calendar:1.1.3'
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    implementation 'com.chootdev:timezago:1.1.8'
+    implementation "com.android.support:cardview-v7:${libSupportVersion}"
+    implementation 'com.github.devlight.shadowlayout:library:1.0.2'
+    implementation 'com.github.frankiesardo:linearlistview:1.0.1@aar'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation project(':lib205')
+    implementation project(':libhalapis')
+    implementation project(':lib')
+    // bluetooth lib sdk
+    implementation files('libs/bluetoothsdk.jar')
+    implementation files('lib/cloudpossdk-1.5.2.34.aar')
+    testImplementation 'junit:junit:4.12'
+    implementation 'pub.devrel:easypermissions:0.4.3'
+//    implementation(name: 'cloudpossdk-1.5.2.34', ext: 'aar')
+    implementation group: 'com.google.zxing', name: 'javase', version: '3.3.0'
+    implementation group: 'com.google.zxing', name: 'core', version: '3.3.0'
+    // barcode ZXing
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'me.grantland:autofittextview:0.2.+'
+    //noinspection OutdatedLibrary
+    implementation 'com.android.volley:volley:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_gradient_blue"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/pullToRefresh"
+        android:padding="@dimen/d8">
+
+        <LinearLayout
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/d40">
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:id="@+id/item_name"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="Katalog"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d16" />
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/d20"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laySearch"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:layout_height="@dimen/d40">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d40"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingTop="@dimen/d0"
+                android:textSize="13sp"
+                android:hint="Masukan nama item.."
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/d20"
+                android:padding="@dimen/d4"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/close"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/btnTambah"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Tidak ada data"
+                    tools:ignore="HardcodedText" />
+
+                <!--<android.support.v4.widget.SwipeRefreshLayout-->
+                    <!--android:id="@+id/pullToRefresh"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                    <!--app:layout_constraintRight_toRightOf="parent"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/header_view">-->
+
+                    <!--<com.paging.listview.PagingListView-->
+                        <!--android:id="@+id/item_list"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent" />-->
+
+
+                <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTambah"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradient"
+                android:padding="@dimen/d16"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/white"
+                    android:text="TAMBAH BARANG"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

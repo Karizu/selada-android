@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.orhanobut:hawk:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aef691ea298acb0e905fdcc3086828a/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aef691ea298acb0e905fdcc3086828a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6aef691ea298acb0e905fdcc3086828a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.orhanobut/hawk/2.0.1/c88542f56b91ba489723bb6f58f14a303e953d64/hawk-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

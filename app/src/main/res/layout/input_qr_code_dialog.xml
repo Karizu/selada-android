@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center">
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:padding="@dimen/d15"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/black"
+            android:id="@+id/dialog_title"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_24"
+            android:text="Kode Transaksi"
+            android:background="@drawable/border_bottom"/>
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/dialog_information"
+            android:text="Masukan kode transaksi yang telah diberikan"
+            android:visibility="gone"/>
+
+
+
+        <EditText
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d15"
+            android:hint="Masukan Kode Transaksi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:inputType="number"
+            android:background="@drawable/border_rounded_gray"
+            android:padding="@dimen/d10"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:text="BATAL"
+                android:layout_weight="1"
+                android:background="@drawable/border_round_blue_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d45"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/container_ok"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/d15"
+                android:layout_marginHorizontal="@dimen/d15">
+                <Button
+                    android:id="@+id/btn_next"
+                    android:text="CEK TRANSAKSI"
+                    android:background="@drawable/border_round_blue_gradient"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/s20"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

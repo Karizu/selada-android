@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:1-51:12
+	package
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:5:5-32
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:10:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:10:22-81
+uses-permission#android.permission.CLOUDPOS_CLONESCREEN
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.CLOUDPOS_PRINTER
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.CLOUDPOS_MSR
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:18:5-70
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:18:22-68
+uses-permission#android.permission.CLOUDPOS_CONTACTLESS_CARD
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:20:5-83
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:20:22-81
+uses-permission#android.permission.CLOUDPOS_SMARTCARD
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:22:5-76
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:22:22-74
+uses-permission#android.permission.CLOUDPOS_SERIAL
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:24:5-74
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:24:22-71
+uses-permission#android.permission.CLOUDPOS_LED
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:26:5-71
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:26:22-68
+uses-permission#android.permission.CLOUDPOS_CUSTOMER_DISPLAY
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:29:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:29:22-81
+uses-permission#android.permission.CLOUDPOS_PIN_GET_PIN_BLOCK
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:32:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:32:22-82
+uses-permission#android.permission.CLOUDPOS_PIN_MAC
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:33:5-75
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:33:22-72
+uses-permission#android.permission.CLOUDPOS_PIN_ENCRYPT_DATA
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:34:22-81
+uses-permission#android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:35:5-86
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:35:22-84
+uses-permission#android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:36:5-88
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:36:22-86
+uses-permission#android.permission.CLOUDPOS_IDCard
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:39:5-73
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:39:22-71
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:41:5-78
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:41:22-76
+uses-permission#android.permission.INTERNET
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:43:5-67
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:43:22-64
+uses-permission#android.permission.CLOUDPOS_MONEYBOX
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:46:5-75
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:46:22-73
+uses-permission#android.permission.CLOUDPOS_FINGERPRINT
+ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:48:5-78
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml:48:22-76
+uses-sdk
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-latest\selada-android\libhalapis\src\main\AndroidManifest.xml

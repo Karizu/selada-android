@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/very_light_pink"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintBottom_toTopOf="@+id/pullToRefresh"
+            android:orientation="horizontal"
+            android:padding="@dimen/d8">
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="@dimen/d16"
+                android:id="@+id/item_name"
+                android:text="Pengaturan"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"/>
+            <ImageView
+                android:layout_width="@dimen/s20"
+                android:layout_height="@dimen/d20"
+                android:src="@drawable/filter"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_below="@id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/btnPilihBooth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/d16">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textColor="@color/Black"
+                                android:paddingTop="@dimen/d8"
+                                android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                                android:text="Booth"
+                                tools:ignore="HardcodedText" />
+
+                            <Spinner
+                                android:id="@+id/spinnerBooth"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:paddingStart="14dp"
+                                android:visibility="gone"
+                                android:paddingBottom="5dp"
+                                android:paddingTop="@dimen/d8"
+                                tools:ignore="HardcodedText,RtlSymmetry" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d6"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:paddingBottom="@dimen/d16"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!--<FrameLayout-->
+                            <!--android:id="@+id/frameLayout"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="160dp">-->
+
+                            <!--<ImageView-->
+                            <!--android:id="@+id/image_login"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:adjustViewBounds="true"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@drawable/mireta_bg" />-->
+
+                            <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:gravity="center">-->
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/tvName"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/Black"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:text="KANTIN BUDHE"-->
+                            <!--tools:ignore="HardcodedText" />-->
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/tvUsername"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/Black"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:text="Jl. Cinta Asih No. 7"-->
+                            <!--tools:ignore="HardcodedText" />-->
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/tvEmail"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/Black"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:text="(022)85200218"-->
+                            <!--tools:ignore="HardcodedText" />-->
+
+                            <!--</LinearLayout>-->
+
+                            <!--</FrameLayout>-->
+
+                            <LinearLayout
+                                android:id="@+id/btnUbahMasterKey"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:textColor="@color/Black"
+                                    android:paddingTop="@dimen/d8"
+                                    android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                                    android:text="Input Master Key"
+                                    tools:ignore="HardcodedText" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d6"/>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/btnClearData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/d16">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textColor="@color/Black"
+                                android:paddingTop="@dimen/d8"
+                                android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                                android:text="Clear Data"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/btnKeluar"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gradient"
+            android:padding="@dimen/d16"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:text="KELUAR"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_24px_white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".modul.selada.launcher.SeladaLaucherActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_selada" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/very_light_pink"
+                    android:paddingTop="@dimen/d0"
+                    android:orientation="vertical"
+                    tools:ignore="ScrollViewSize"
+                    android:paddingBottom="@dimen/d12">
+                    <include
+                        layout="@layout/ardi_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/d16"
+                        android:paddingRight="@dimen/d16"
+                        android:paddingTop="@dimen/d8"
+                        android:paddingBottom="@dimen/d8"
+                        android:background="@color/grey_background"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/d12">
+
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PPOB"
+                            android:textColor="#000"
+                            android:paddingLeft="@dimen/d16"
+                            android:paddingRight="@dimen/d16"
+                            android:textSize="@dimen/s13"/>
+
+                    </LinearLayout>
+
+                    <com.boardinglabs.mireta.selada.component.ui.AutoGridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"/>
+
+                    <LinearLayout
+                        android:id="@+id/list_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/seq_0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_1"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_pln_prabayar_lightning" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="PLN\nPrabayar"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_2"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_pln_pascabayar_lightning" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+
+                                android:id="@+id/menu_title_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="PLN\nPascabayar"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_3"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_pulsa" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Pulsa\nReguler"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_4"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_data" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Paket\nData"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginRight="@dimen/d15"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/seq_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_5"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pdam" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="PDAM"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_6"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/icon_bpjs_kesehatan" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="BPJS\nKesehatan"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_7"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/speedy" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Telkom"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_8"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/icon_pasca" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Voucher\nGame"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginRight="@dimen/d15"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/seq_8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_9"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/icon_pulsa" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multipayment"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_10"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/pulsa_pascabayar" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Pulsa\nPascabayar"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_11"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/multi_finance" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multi\nFinance"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_12"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Tv Kabel"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/tv_berlangganan" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="TV\nKabel"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginRight="@dimen/d15"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/seq_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_13"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multipayment"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_14"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Pulsa\nPascabayar"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_15"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multi\nFinance"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_16"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Tv Kabel"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="TV\nKabel"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginRight="@dimen/d15"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/seq_16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_17"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multipayment"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_17"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_18"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Pulsa\nPascabayar"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_18"
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_19"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Home"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="Multi\nFinance"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/seq_19"
+                            android:visibility="gone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="8dp">
+
+                                <ImageView
+                                    android:id="@+id/menu_icon_20"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:contentDescription="Icon Tv Kabel"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transaksi_baru" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:id="@+id/menu_title_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:paddingBottom="6dp"
+                                android:text="TV\nKabel"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d35"
+                android:paddingRight="@dimen/d35"
+                android:paddingBottom="@dimen/d8"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_login"
+                        android:layout_width="@dimen/d200"
+                        android:layout_height="@dimen/d200"
+                        android:src="@drawable/logo_login" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d4"
+                    android:text="User Data"
+                    android:textStyle="bold"
+                    android:textColor="@color/OrangeText"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/DarkOrange"/>
+
+                <EditText
+                    android:id="@+id/input_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:id="@+id/input_password"
+                    android:textSize="@dimen/s17"
+                    android:textAlignment="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d4"
+                    android:text="Store"
+                    android:textStyle="bold"
+                    android:textColor="@color/OrangeText"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/DarkOrange"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d8"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Store Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_brand_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Brand Name"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_registration_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Business Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText,TextFields" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/input_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Store Address"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/s17"
+                    tools:ignore="HardcodedText" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent"/>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:textSize="@dimen/s20"
+                    android:background="@drawable/border_round_gradient"
+                    android:text="REGISTER"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center|center_vertical">
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/OrangeText"
+                android:text="Sudah punya akun? "
+                tools:ignore="HardcodedText" />
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLogin"
+                android:textColor="@color/OrangeText"
+                android:text="Login"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

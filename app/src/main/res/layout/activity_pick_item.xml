@@ -1,0 +1,270 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/d50">
+
+            <include layout="@layout/toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/header_view"/>
+
+            <LinearLayout
+                android:id="@+id/header_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d40"
+                android:background="@drawable/background_gradient_blue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintBottom_toTopOf="@+id/pullToRefresh"
+                android:orientation="horizontal"
+                android:padding="@dimen/d8">
+
+                <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:maxLines="2"
+                    android:textSize="@dimen/d16"
+                    android:id="@+id/item_name"
+                    android:text="Menu"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"/>
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="@dimen/s20"
+                    android:layout_height="@dimen/d20"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:id="@+id/laySearch"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2"
+                    android:layout_height="@dimen/d40">
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d40"
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:paddingTop="@dimen/d0"
+                        android:textSize="13sp"
+                        android:hint="Masukan nama item.."
+                        tools:ignore="HardcodedText,SmallSp" />
+
+                    <ImageView
+                        android:id="@+id/imgClose"
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/d20"
+                        android:padding="@dimen/d4"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/close"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefresh"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_view">
+
+                <com.paging.listview.PagingListView
+                    android:id="@+id/item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/black_transparent"
+                android:id="@+id/overview_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottom_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/gray.primary_dark"
+                            android:maxLines="2"
+                            android:textSize="@dimen/d18"
+                            android:text="TOTAL"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:textStyle="bold"/>
+
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray.primary_dark"
+                            android:maxLines="1"
+                            android:textSize="@dimen/d18"
+                            android:id="@+id/total_price_overview"
+                            android:text="Rp. 0"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <com.paging.listview.PagingListView
+                        android:id="@+id/item_list_overview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d16"></com.paging.listview.PagingListView>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:layout_marginTop="@dimen/d6"-->
+                        <!--android:layout_marginRight="@dimen/d6"-->
+                        <!--android:layout_marginBottom="@dimen/d6"-->
+                        <!--android:gravity="right">-->
+
+                        <!--<Button-->
+                            <!--android:id="@+id/btnBayar"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:background="@drawable/background_button"-->
+                            <!--android:text="Checkout"-->
+                            <!--tools:ignore="HardcodedText" />-->
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d50"
+                android:background="@drawable/background_gradient"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/collapsed_view"
+                    android:padding="8dp">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:maxLines="2"
+                        android:textSize="@dimen/d18"
+                        android:id="@+id/total_item"
+                        android:text="0 Item"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"/>
+                    <FrameLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="@dimen/d4"
+                        android:layout_marginBottom="@dimen/d4"></FrameLayout>
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:maxLines="2"
+                        android:textSize="@dimen/d18"
+                        android:id="@+id/total_price"
+                        android:text="Rp. 0"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/d20"
+                        android:src="@drawable/cart"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/expanded_view"
+                    android:visibility="gone"
+                    android:padding="8dp">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:maxLines="2"
+                        android:textSize="@dimen/d18"
+                        android:text="Bayar"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/s20"
+                        android:layout_height="@dimen/d20"
+                        android:src="@drawable/cart"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:id="@+id/bottom_button"/>
+            </FrameLayout>
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+</LinearLayout>

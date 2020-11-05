@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_marginTop="-6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bcg_home"
+        android:layout_marginLeft="@dimen/d6"
+        android:layout_marginRight="@dimen/d6"
+        android:paddingTop="@dimen/d16"
+        android:paddingLeft="@dimen/d16"
+        android:paddingRight="@dimen/d16"
+        android:paddingBottom="@dimen/d2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kotak_header"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp">
+
+                    <android.widget.TextView
+                        android:id="@+id/textViewTID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="TID : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/faint_yellow"
+                        android:textSize="11sp" />
+
+                    <android.widget.TextView
+                        android:id="@+id/textViewMID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="MID : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/faint_yellow"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp">
+
+                    <android.widget.TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text="Nama Merchant : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/faint_yellow"
+                        android:textSize="11sp" />
+
+                    <android.widget.TextView
+                        android:id="@+id/textViewMName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/faint_yellow"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/menuInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d16">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bcg_menu_atas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:gravity="center"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/info_saldo"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="INFO SALDO"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:textSize="@dimen/d10"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/menuTopupHistory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d16">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bcg_menu_atas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:gravity="center"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/top_history_icon"
+                        android:layout_marginBottom="4dp"/>
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="HISTORY"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:textSize="@dimen/d10"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d16">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bcg_menu_atas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:gravity="center"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/top_reward_icon"
+                        android:layout_marginBottom="4dp" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="POINT"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:textSize="@dimen/d10"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/menuSetting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="@dimen/d16">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bcg_menu_atas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:gravity="center"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/top_setting_icon" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoLightTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="SETTINGS"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:textSize="@dimen/d10"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/menuTopupHistory"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="@dimen/d8"-->
+                <!--android:gravity="center">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:layout_marginBottom="4dp"-->
+                    <!--android:background="@drawable/bcg_menu_atas">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/history1"-->
+                        <!--android:contentDescription="Icon Home" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="@dimen/d50"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/topup_history"-->
+                    <!--android:lines="2"-->
+                    <!--android:textStyle="bold"-->
+                    <!--tools:targetApi="jelly_bean" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/menuReward"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="@dimen/d8"-->
+                <!--android:gravity="center">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:layout_marginBottom="4dp"-->
+                    <!--android:background="@drawable/bcg_menu_atas">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/ic_settings_black_24dp"-->
+                        <!--android:contentDescription="Icon Home" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="@dimen/d50"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/setting"-->
+                    <!--android:lines="2"-->
+                    <!--android:textStyle="bold"-->
+                    <!--tools:targetApi="jelly_bean" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/menuSetting"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="@dimen/d8"-->
+                <!--android:gravity="center">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:layout_marginBottom="4dp"-->
+                    <!--android:background="@drawable/bcg_menu_atas">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="25dp"-->
+                        <!--android:layout_height="25dp"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:src="@drawable/ic_settings_black_24dp"-->
+                        <!--android:contentDescription="Icon Home" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="@dimen/d50"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/setting"-->
+                    <!--android:lines="2"-->
+                    <!--android:textStyle="bold"-->
+                    <!--tools:targetApi="jelly_bean" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.frankiesardo:linearlistview:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a74d57623d0fdb61dd95e007817556d/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a74d57623d0fdb61dd95e007817556d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a74d57623d0fdb61dd95e007817556d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.frankiesardo/linearlistview/1.0.1/5be15384564fd40afb61f9fb63a25a1472b7a56a/linearlistview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

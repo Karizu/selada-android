@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/very_light_pink"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_selada" />
+
+    <LinearLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:background="@color/primaryAccentBlue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/pullToRefresh"
+        android:orientation="horizontal"
+        android:padding="@dimen/d8">
+
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:textSize="@dimen/d16"
+            android:id="@+id/item_name"
+            android:text="History Topup"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/d20"
+            android:visibility="invisible"
+            android:src="@drawable/filter"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_above="@id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tidak ada transaksi"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText"
+                    android:textColor="@color/Gray"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/btnTambah"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/background_gradient"
+            android:padding="@dimen/d16"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:text="GRAND TOTAL"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvTotalTopup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:gravity="right"
+                android:text="-"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

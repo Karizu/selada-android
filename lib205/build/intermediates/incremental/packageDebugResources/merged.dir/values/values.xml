@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">1dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <string name="app_name">APIDemo</string>
+    <string name="btn_cancel" translatable="false">Quit</string>
+    <string name="btn_ok" translatable="false">DO</string>
+    <string name="editText_input_hint" translatable="false">input data</string>
+    <string name="menu_settings" translatable="false">Settings</string>
+    <string name="title_activity_second_main" translatable="false">SecondMainActivity</string>
+    <string name="txv_result_hint" translatable="false">calculate result</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

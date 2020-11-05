@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d40"
+    android:background="@drawable/border_bottom"
+    android:orientation="vertical">
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/item_row_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"><!-- Bottom View Start-->
+        <FrameLayout
+            android:id="@+id/user_feed_row_bottom"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/red_alert"
+            android:weightSum="1">
+            <!--What you want to show-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_trash" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Hapus" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/container_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d40"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:layout_width="@dimen/d25"
+                android:layout_height="@dimen/d25"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@drawable/border_round_red"
+                android:id="@+id/delete_button"
+                android:src="@drawable/close"
+                android:layout_gravity="center_vertical"/>
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray.primary_dark"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginRight="@dimen/d10">
+
+            </FrameLayout>
+
+
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray.primary_dark"
+                android:textSize="@dimen/d13"
+                android:id="@+id/item_total"
+                android:text="2 Item"
+                android:layout_gravity="center_vertical"/>
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray.primary_dark"
+                android:maxLines="2"
+                android:textSize="@dimen/d13"
+                android:id="@+id/item_name"
+                android:text="Nasi Goreng"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_weight="1"/>
+
+            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray.primary_dark"
+                android:maxLines="2"
+                android:textSize="@dimen/d13"
+                android:id="@+id/item_total_price"
+                android:text="Rp. 10.500.000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d10"
+                android:gravity="right"/>
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

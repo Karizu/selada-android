@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/border_light_gray"
+    android:padding="@dimen/d15"
+    android:layout_margin="@dimen/d30">
+
+    <ImageView
+        android:id="@+id/imageview_icon"
+        android:layout_width="@dimen/d25"
+        android:layout_height="@dimen/d25"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d10"
+        android:src="@drawable/ic_artboard_2" />
+
+    <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+        android:id="@+id/textview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageview_icon"
+        android:background="@android:color/transparent"
+        android:paddingBottom="@dimen/d5"
+        android:paddingTop="@dimen/d5"
+        android:textColor="@color/charcoal"
+        android:textSize="@dimen/s15"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+</RelativeLayout>

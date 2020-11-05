@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".modul.selada.launcher.SeladaLaucherActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_selada" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/very_light_pink"
+                    android:paddingTop="@dimen/d0"
+                    android:orientation="vertical"
+                    tools:ignore="ScrollViewSize"
+                    android:paddingBottom="@dimen/d12">
+
+                    <include
+                        layout="@layout/ardi_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/d16"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="POS"
+                            android:textSize="@dimen/s13"
+                            android:textColor="@color/Black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:paddingTop="@dimen/d6"
+                            android:paddingBottom="@dimen/d6">
+
+                            <LinearLayout
+                                android:id="@+id/btnTransaksiBaru"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_transaksi_baru"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Transaksi \nBaru"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnInventory"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_inventory"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Inventory"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnHistoryPos"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_history"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="History"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnLainnyaPos"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu_kuning"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_lainnya"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Yang \nLainnya"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/d16"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PPOB"
+                            android:textSize="@dimen/s13"
+                            android:textColor="@color/Black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:paddingTop="@dimen/d6"
+                            android:paddingBottom="@dimen/d6">
+
+                            <LinearLayout
+                                android:id="@+id/btnPulsa"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_pulsa"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Pulsa"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnPaketData"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_data"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Paket \nData"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnHistoryPpob"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_history"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="History"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnLainnyaPpob"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu_kuning"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_lainnya"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Yang \nLainnya"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/d16"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LAKU PANDAI"
+                            android:textSize="@dimen/s13"
+                            android:textColor="@color/Black"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="4"
+                            android:paddingTop="@dimen/d6"
+                            android:paddingBottom="@dimen/d6">
+
+                            <LinearLayout
+                                android:id="@+id/btnTarikTunai"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_tarik_tunai"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Tarik \nTunai"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnSetorTabungan"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_setor_tabungan"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Setor \nTabungan"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnReportTransaksi"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu2"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_history"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Report \nTransaksi"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnLainnyaLakuPandai"
+                                android:layout_width="@dimen/d65"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/bcg_menu_kuning"
+                                android:layout_marginStart="@dimen/d8"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_lainnya"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Yang \nLainnya"
+                                    android:textSize="10sp"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/btnPOS"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/pos"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2"-->
+<!--                        android:layout_marginRight="@dimen/d16"-->
+<!--                        android:layout_marginLeft="@dimen/d16">-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:gravity="right">-->
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView-->
+<!--                                android:id="@+id/pos"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="POINT OF SALE"-->
+<!--                                android:textSize="@dimen/d16"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:textColor="#FFDA65"-->
+<!--                                tools:ignore="HardcodedText"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:layout_alignParentEnd="true" />-->
+
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/pos"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:text="Penjualan Toko, Laporan, dll."-->
+<!--                                android:textColor="#FFDA65"-->
+<!--                                android:textSize="@dimen/s12"-->
+<!--                                android:textAlignment="gravity"-->
+<!--                                android:gravity="right"-->
+<!--                                tools:ignore="HardcodedText" />-->
+<!--                        </LinearLayout>-->
+
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="@dimen/d12"/>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/btnPPOB"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/biller"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2"-->
+<!--                        android:layout_marginRight="@dimen/d16"-->
+<!--                        android:layout_marginLeft="@dimen/d16">-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:gravity="right">-->
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView-->
+<!--                                android:id="@+id/biller"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="PPOB"-->
+<!--                                android:textSize="@dimen/d16"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:textColor="#000"-->
+<!--                                tools:ignore="HardcodedText"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:layout_alignParentEnd="true" />-->
+
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/pos"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:text="Pembayaran Listrik, Pulsa, Paket Data, dll."-->
+<!--                                android:textColor="#000"-->
+<!--                                android:textSize="@dimen/s12"-->
+<!--                                android:textAlignment="gravity"-->
+<!--                                android:gravity="right"-->
+<!--                                tools:ignore="HardcodedText" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="@dimen/d12"/>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/btnLakuPandai"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/lakupandai"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:weightSum="2"-->
+<!--                        android:layout_marginRight="@dimen/d16"-->
+<!--                        android:layout_marginLeft="@dimen/d16">-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="1">-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:gravity="right">-->
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView-->
+<!--                                android:id="@+id/lakupandai"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="LAKU PANDAI"-->
+<!--                                android:textSize="@dimen/d16"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:textColor="#FFDA65"-->
+<!--                                tools:ignore="HardcodedText"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:layout_alignParentEnd="true" />-->
+
+<!--                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_below="@+id/pos"-->
+<!--                                android:layout_alignParentEnd="true"-->
+<!--                                android:layout_alignParentRight="true"-->
+<!--                                android:layout_marginTop="8dp"-->
+<!--                                android:layout_marginEnd="@dimen/d16"-->
+<!--                                android:layout_marginRight="@dimen/d16"-->
+<!--                                android:text="Transfer Bank, Tarik Tunai, Cek Saldo, dll."-->
+<!--                                android:textColor="#FFDA65"-->
+<!--                                android:textSize="@dimen/s12"-->
+<!--                                android:textAlignment="gravity"-->
+<!--                                android:gravity="right"-->
+<!--                                tools:ignore="HardcodedText" />-->
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/d8"
+    android:layout_margin="@dimen/d6"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/tvQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/d8"
+        android:text="5 x"/>
+
+    <TextView
+        android:id="@+id/tvNameProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Teh Manis"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_weight="3"
+        android:text="Rp 150,000"/>
+
+</LinearLayout>

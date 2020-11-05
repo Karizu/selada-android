@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="selada-android-rework/app" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" group="selada-android-rework/lib" />
+      <module fileurl="file://$PROJECT_DIR$/lib205/lib205.iml" filepath="$PROJECT_DIR$/lib205/lib205.iml" group="selada-android-rework/lib205" />
+      <module fileurl="file://$PROJECT_DIR$/libhalapi/libhalapi.iml" filepath="$PROJECT_DIR$/libhalapi/libhalapi.iml" group="selada-android-rework/libhalapi" />
+      <module fileurl="file://$PROJECT_DIR$/libhalapis/libhalapis.iml" filepath="$PROJECT_DIR$/libhalapis/libhalapis.iml" group="selada-android-rework/libhalapis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/selada-android-rework.iml" filepath="$PROJECT_DIR$/.idea/modules/selada-android-rework.iml" group="selada-android-rework" />
+    </modules>
+  </component>
+</project>

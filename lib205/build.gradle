@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+
+    defaultConfig {
+
+        minSdkVersion 15
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 23
+
+        ndk {
+            moduleName "jni_wizarpos_printer"
+            stl "stlport_static"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+dependencies {
+    implementation project(path: ':libhalapis')
+}
+

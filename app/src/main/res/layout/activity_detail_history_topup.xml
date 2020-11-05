@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modul.transactions.items.pembayaran.PembayaranSuksesActivity">
+
+    <include layout="@layout/toolbar_selada"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btnSelesai">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/d16"
+                android:paddingRight="@dimen/d16"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:background="@color/grey_background"
+                android:orientation="horizontal">
+
+                <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info Transaksi"
+                    android:textSize="@dimen/s13"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/gray.primary"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info_outline_black_24dp"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:textSize="@dimen/s12"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvRangeTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Topup"
+                        android:textColor="@color/gray_text"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_update_black_24dp"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Merchant"
+                        android:textSize="@dimen/s12"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvMerchantNames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/gray_text"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:src="@drawable/bca_logo"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Total"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvTotalBayar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. -"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/gray.primary"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/d16"
+                android:paddingRight="@dimen/d16"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:background="@color/grey_background"
+                android:orientation="horizontal">
+
+                <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info Pembayaran"
+                    android:textSize="@dimen/s13"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/gray.primary"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_info_outline_black_24dp"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:textSize="@dimen/s12"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer"
+                        android:textColor="@color/gray_text"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_outline_black_24dp"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Rekening"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="183 126 0713"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bca_logo"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Rekening"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CV. BL Teknologi Indonesia"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/d16"
+                android:paddingRight="@dimen/d16"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:background="@color/grey_background"
+                android:orientation="horizontal">
+
+                <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status Transaksi"
+                    android:textSize="@dimen/s13"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_update_black_24dp"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvStatusTransaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUKSES"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:src="@drawable/bca_logo"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvTanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:src="@drawable/bca_logo"/>
+
+                <View
+                    android:layout_width="@dimen/d16"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Waktu"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:id="@+id/tvWaktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/s12"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d16"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnPrintStruk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d8"
+                        android:background="@drawable/drawable_button_confirm"
+                        android:padding="@dimen/d16"
+                        android:orientation="horizontal">
+
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primaryDarkBlue"
+                            android:gravity="center"
+                            android:textSize="@dimen/s14"
+                            android:text="Print Struk"
+                            tools:ignore="HardcodedText,SpUsage" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d32"/>
+
+    <LinearLayout
+        android:id="@+id/btnSelesai"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_gradient"
+        android:padding="@dimen/d16"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/d16"
+            android:text="SELESAI"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+
+</RelativeLayout>

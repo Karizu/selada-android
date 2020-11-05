@@ -1,0 +1,47 @@
+{
+  "buildFiles": [
+    "E:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk",
+    "E:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d clean"
+  ],
+  "libraries": {
+    "wizarpos_contactless_ic_card-release-armeabi-v7a": {
+      "artifactName": "wizarpos_contactless_ic_card",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_contactless_ic_card.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_contactless_ic_card.so"
+    },
+    "wizarpos_pinpad-release-armeabi-v7a": {
+      "artifactName": "wizarpos_pinpad",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_pinpad.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_pinpad.so"
+    },
+    "wizarpos_magnetic_stripe_reader-release-armeabi-v7a": {
+      "artifactName": "wizarpos_magnetic_stripe_reader",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_magnetic_stripe_reader.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_magnetic_stripe_reader.so"
+    },
+    "wizarpos_contact_ic_card-release-armeabi-v7a": {
+      "artifactName": "wizarpos_contact_ic_card",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_contact_ic_card.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_contact_ic_card.so"
+    },
+    "wizarpos_emv_kernel-release-armeabi-v7a": {
+      "artifactName": "wizarpos_emv_kernel",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_emv_kernel.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_emv_kernel.so"
+    },
+    "wizarpos_printer-release-armeabi-v7a": {
+      "artifactName": "wizarpos_printer",
+      "buildCommand": "E:\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Android.mk NDK_APPLICATION_MK\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003dE:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dE:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\lib APP_CPPFLAGS+\u003d E:/ProjectAndroid/selada-android-rework/lib/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libwizarpos_printer.so",
+      "abi": "armeabi-v7a",
+      "output": "E:\\ProjectAndroid\\selada-android-rework\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libwizarpos_printer.so"
+    }
+  }
+}

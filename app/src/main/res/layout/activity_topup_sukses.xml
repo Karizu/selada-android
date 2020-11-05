@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modul.transactions.items.pembayaran.PembayaranSuksesActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/btnSelesai"
+        android:layout_marginTop="@dimen/d16"
+        android:padding="@dimen/d16"
+        android:weightSum="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/d80"
+                android:layout_height="@dimen/d80"
+                android:src="@drawable/ic_check_white_24dp"
+                android:background="@drawable/circle_orange"
+                android:padding="@dimen/d16"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Topup Ardi berhasil dilakukan"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d16"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SALDO ANDA"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/tvKembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rp. 0"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btnPrintStruk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d16"
+                android:orientation="horizontal"
+                android:padding="@dimen/d16"
+                android:weightSum="2"
+                android:background="@drawable/background_field_orange">
+
+                <ImageView
+                    android:layout_width="@dimen/d30"
+                    android:layout_height="@dimen/d30"
+                    android:padding="@dimen/d8"
+                    android:src="@drawable/ic_print_black_24dp"
+                    android:background="@drawable/circle_orange"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:textSize="@dimen/d16"
+                    android:text="Print Struk Disini"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d32"/>
+
+    <LinearLayout
+        android:id="@+id/btnSelesai"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_gradient"
+        android:padding="@dimen/d16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/d16"
+            android:text="SELESAI"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+
+</RelativeLayout>

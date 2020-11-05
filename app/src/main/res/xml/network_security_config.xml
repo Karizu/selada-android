@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">37.72.172.144</domain>
+        <domain includeSubdomains="true">192.168.1.21</domain>
+        <domain includeSubdomains="true">api.selada.id</domain>
+        <domain includeSubdomains="true">54.255.97.130</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="2"
+    android:padding="@dimen/d16"
+    android:layout_marginStart="@dimen/d10"
+    android:layout_marginEnd="@dimen/d10"
+    android:layout_marginBottom="@dimen/d8"
+    android:background="@drawable/background_gradient_blue_corners"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bulan ini"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/report_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 210,000,000"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/report_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="PENJUALAN"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

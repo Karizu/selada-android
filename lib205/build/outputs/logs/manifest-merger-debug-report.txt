@@ -1,0 +1,167 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:1-69:12
+	package
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+uses-permission#android.permission.NFC
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:8:5-62
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:8:22-59
+uses-feature#android.hardware.nfc
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:9:5-81
+	android:required
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:9:55-78
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:9:19-54
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:11:22-74
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:14:5-73
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:14:22-70
+uses-permission#android.permission.CLOUDPOS_LED
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:15:5-71
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:15:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:16:22-76
+uses-permission#android.permission.INTERNET
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:18:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.CLOUDPOS_DISABLE_HOME_KEY_IN_ACTIVITY
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:22:5-96
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:22:22-93
+uses-permission#android.permission.CAMERA
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:24:5-65
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:24:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:25:22-63
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:27:5-76
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:27:22-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:28:5-76
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:28:22-73
+uses-permission#android.permission.FLASHLIGHT
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:29:5-69
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:29:22-66
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:30:5-72
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:30:22-69
+uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:31:5-93
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:31:22-90
+uses-permission#android.permission.CLOUDPOS_PRINTER
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:36:5-75
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:36:22-72
+uses-permission#android.permission.CLOUDPOS_MSR
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:38:5-71
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:38:22-68
+uses-permission#android.permission.CLOUDPOS_CONTACTLESS_CARD
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:40:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:40:22-81
+uses-permission#android.permission.CLOUDPOS_SMARTCARD
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:42:5-77
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:42:22-74
+uses-permission#android.permission.CLOUDPOS_SERIAL
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:44:5-74
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:44:22-71
+uses-permission#android.permission.CLOUDPOS_PIN_GET_PIN_BLOCK
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:46:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:46:22-82
+uses-permission#android.permission.CLOUDPOS_PIN_MAC
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:47:5-75
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:47:22-72
+uses-permission#android.permission.CLOUDPOS_PIN_ENCRYPT_DATA
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:48:5-83
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:48:22-81
+uses-permission#android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:49:5-86
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:49:22-84
+uses-permission#android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:50:5-88
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:50:22-86
+uses-permission#android.permission.CLOUDPOS_IDCard
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:51:5-74
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:51:22-71
+uses-permission#android.permission.CLOUDPOS_MONEYBOX
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:54:5-76
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:54:22-73
+uses-permission#android.permission.CLOUDPOS_CUSTOMER_DISPLAY
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:56:5-84
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:56:22-81
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:64:5-68
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:64:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:65:5-74
+	android:name
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml:65:22-71
+uses-sdk
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		ADDED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\selada-android-rework\lib205\src\main\AndroidManifest.xml

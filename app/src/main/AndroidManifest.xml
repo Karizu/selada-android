@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.boardinglabs.mireta.selada">
+
+    <application
+        android:name=".MiretaPOSApplication"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_selada"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_selada"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenTheme"
+        tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode"
+        tools:replace="android:icon">
+
+        <activity android:name=".modul.lakupandai.HomeLakuPandaiActivity"></activity>
+        <activity android:name=".modul.biller.selada.ppobpascabayar.PpobPascabayarActivity" />
+        <activity android:name=".modul.selada.launcher.history.topup.DetailHistoryTopupActivity" />
+        <activity android:name=".modul.selada.launcher.history.topup.HistoryTopupActivity" />
+        <activity android:name=".modul.selada.launcher.history.topup.DetailPembayaranActivity" />
+        <activity android:name=".modul.selada.launcher.topup.TopupSeladaActivity" />
+        <activity android:name=".modul.biller.selada.HomeBillerActivity" />
+        <activity
+            android:name=".modul.selada.launcher.SeladaLaucherActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".modul.ardi.freemeal.FreeMeal" />
+        <activity android:name=".modul.ardi.registermember.RegisterMember" />
+        <activity android:name=".modul.akun.rfid.RfidActivity" />
+        <activity android:name=".modul.transactions.items.voids.VoidActivity" />
+        <activity android:name=".modul.master.katalog.KatalogActivity" />
+        <activity android:name=".modul.akun.pengaturan.PengaturanAkunActivity" />
+        <activity android:name=".modul.ardi.historytopup.HistoryTopupActivity" />
+        <activity android:name=".modul.ardi.SaldoActivity" />
+        <activity android:name=".modul.ardi.pengaturan.PengaturanActivity" />
+        <activity android:name=".modul.transactions.items.pembayaran.pembayaranardi.PembayaranArdiActivity" />
+        <activity android:name=".modul.ardi.TopupSuksesActivity" />
+        <activity android:name=".modul.ardi.HomeArdiActivity" />
+        <activity android:name=".modul.auth.recoverpassword.RecoverPasswordActivity" />
+        <activity android:name=".modul.auth.forgotpassword.ForgotPasswordActivity" />
+        <activity android:name=".modul.transactions.items.pembayaran.PembayaranSuksesActivity" />
+        <activity android:name=".component.util.PhotoUpdateUtil" />
+        <activity android:name=".modul.akun.ubahpassword.UbahPaswordActivity" />
+        <activity android:name=".modul.auth.RegisterActivity" />
+        <activity android:name=".modul.transactions.items.pembayaran.scancode.ScanCodeActivity" />
+        <activity
+            android:name=".modul.master.printer.PrinterActivity"
+            android:label="@string/title_activity_printer"
+            android:theme="@style/FullScreenTheme.NoActionBar" />
+        <activity android:name=".component.DeviceActivity" />
+        <activity android:name=".component.util.Scanner" />
+        <activity android:name=".modul.master.laporan.LaporanStock" />
+        <activity android:name=".modul.master.laporan.LaporanPenjualan" />
+        <activity android:name=".modul.master.laporan.LaporanActivity" />
+        <activity android:name=".modul.master.stok.inventori.TambahBarangActivity" />
+        <activity android:name=".modul.master.stok.inventori.StokActivity" />
+        <activity android:name=".modul.master.categories.CategoryActivity" />
+        <activity android:name=".modul.master.brand.BrandActivity" />
+        <activity android:name=".modul.master.profil.toko.ProfilTokoActivity" />
+        <activity android:name=".modul.transactions.items.pembayaran.PembayaranActivity" />
+        <activity android:name=".modul.akun.AkunActivity" />
+        <activity android:name=".modul.biller.selada.history.DetailTransactionHistoryActivity" />
+        <activity android:name=".modul.biller.selada.history.TransactionHistoryActivity" />
+        <activity android:name=".modul.history.DetailTransactionActivity" />
+        <activity android:name=".modul.history.HistoryActivity" /> <!-- <service android:name=".messaging.MyFirebaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".modul.biller.selada.purchase.PurchaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".modul.auth.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".modul.old.splash.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modul.biller.selada.transactionreview.TransactionReviewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".modul.home.HomeActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".modul.deals.review.DealReviewActivity" -->
+        <!-- android:screenOrientation="portrait"></activity> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.deals.success.SuccessDealActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.parkir.begin.code.InputCodeBeginParkingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.parkir.begin.scan.ScanParkirActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.parkir.begin.success.SuccessBeginParkirActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.parkir.end.code.InputCodeEndParkingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name=".modul.parkir.end.review.ReviewParkingActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- [START firebase_service] -->
+        <activity
+            android:name=".modul.master.MasterActivity"
+            android:screenOrientation="portrait" /> <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <activity
+            android:name=".modul.transactions.items.ItemsActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCsOhzpWuJAhwqNHKxjJUQHs8J_eNFlwNM" /> <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_icon" -->
+        <!-- android:resource="@drawable/p_logo" /> &lt;!&ndash; <activity android:name=".modul.customer.DetailContactCustomer"></activity> &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_color" -->
+        <!-- android:resource="@color/colorAccent" /> -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="87a953b7cb44408d899baf8eb85b04fce2824a36" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+    <permission
+        android:name="${applicationId}.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <permission android:name="${applicationId}.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.CLOUDPOS_CONTACTLESS_CARD" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 屏蔽HOME键需要的权限 -->
+
+
+    <!-- android.permission.WRITE_SETTINGS -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CLOUDPOS_LED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 屏蔽HOME按钮为指定activity -->
+    <uses-permission android:name="android.permission.CLOUDPOS_DISABLE_HOME_KEY_IN_ACTIVITY" />
+    <!-- 摄像机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <!-- 访问扩展设备的权限。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLOUDPOS_LED" />
+    <!-- 打印机权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PRINTER" />
+    <!-- MSR权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_MSR" />
+    <!-- Contactless card权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_CONTACTLESS_CARD" />
+    <!-- SmartCard 权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_SMARTCARD" />
+    <!-- 串口权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_SERIAL" />
+    <!-- Pinpad权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_GET_PIN_BLOCK" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_MAC" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_ENCRYPT_DATA" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY" />
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY" />
+    <!-- 身份证权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_IDCard" />
+
+    <!-- 钱箱权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_MONEYBOX" />
+    <!-- 客显权限 -->
+    <uses-permission android:name="android.permission.CLOUDPOS_CUSTOMER_DISPLAY" />
+    <!-- NET -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_GET_PIN_BLOCK" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_MAC" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_ENCRYPT_DATA" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_UPDATA_USER_KEY" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_UPDATE_MASTER_KEY" />
+    <uses-permission android:name="android.permission.WIZARPOS_PIN_UPDATE_USER_KEY" />
+
+
+</manifest>

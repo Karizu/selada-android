@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".modul.selada.launcher.SeladaLaucherActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_selada" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/very_light_pink"
+                    android:paddingTop="@dimen/d0"
+                    android:orientation="vertical"
+                    tools:ignore="ScrollViewSize"
+                    android:paddingBottom="@dimen/d12">
+                    <include
+                        layout="@layout/ardi_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/d16"
+                        android:paddingRight="@dimen/d16"
+                        android:paddingTop="@dimen/d8"
+                        android:paddingBottom="@dimen/d8"
+                        android:background="@color/grey_background"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/d12">
+
+                        <com.boardinglabs.mireta.selada.component.fontview.RobotoBoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PPOB"
+                            android:textColor="#000"
+                            android:paddingLeft="@dimen/d16"
+                            android:paddingRight="@dimen/d16"
+                            android:textSize="@dimen/s13"/>
+
+                    </LinearLayout>
+
+                    <com.boardinglabs.mireta.selada.component.ui.AutoGridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

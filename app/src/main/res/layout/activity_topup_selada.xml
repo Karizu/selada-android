@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".modul.selada.launcher.SeladaLaucherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_ocean"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_selada" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/d15"
+            android:layout_below="@+id/toolbar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_round_light_gray"
+                    android:padding="@dimen/d15">
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nominal Topup"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:inputType="number"
+                        android:textSize="@dimen/d14"
+                        android:hint="123456789"
+                        android:id="@+id/etAmount"
+                        tools:ignore="HardcodedText,SpUsage" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_button_selada"
+            android:textColor="@color/white"
+            android:text="PROSES"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</FrameLayout>

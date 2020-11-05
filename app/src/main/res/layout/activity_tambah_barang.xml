@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:background="@drawable/background_gradient_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/pullToRefresh"
+        android:orientation="horizontal"
+        android:padding="@dimen/d8">
+
+        <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:textSize="@dimen/d16"
+            android:id="@+id/item_name"
+            android:text="Tambah Barang"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:layout_width="@dimen/s20"
+            android:layout_height="@dimen/d20"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/d32"
+                    android:paddingEnd="@dimen/d32"
+                    android:paddingTop="@dimen/d16"
+                    android:paddingBottom="@dimen/d16">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgBarang"
+                        android:layout_width="@dimen/d150"
+                        android:layout_height="@dimen/d100"
+                        android:src="@drawable/image_default"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etKodeBarang"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:paddingStart="@dimen/d16"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Kode Barang"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:textAllCaps="false"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Nama Barang"
+                        android:paddingStart="@dimen/d16"
+                        android:maxLines="1"
+                        android:id="@+id/etNamaBarang"
+                        android:textSize="13sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etDeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Deskripsi"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:paddingStart="@dimen/d16"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="14dp"
+                        android:paddingBottom="5dp"
+                        android:visibility="gone"
+                        android:paddingTop="5dp"
+                        android:background="@drawable/border_round_white"
+                        tools:ignore="HardcodedText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/spinnerKategori"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="@dimen/d4"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:paddingStart="14dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@drawable/border_round_white"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/etKategori"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d40"
+                            android:layout_weight="1"
+                            android:background="@drawable/border_round_white"
+                            android:hint="Pilih Kategori"
+                            android:gravity="left|center_vertical"
+                            android:paddingStart="@dimen/d16"
+                            android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                            android:paddingEnd="@dimen/d8"
+                            android:textAllCaps="false"
+                            android:editable="false"
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/tambahKategori"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d40"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/d4"
+                            android:lines="2"
+                            android:background="@drawable/border_round_white"
+                            android:hint="Tambah Kategori"
+                            android:gravity="left|center_vertical"
+                            android:paddingStart="@dimen/d16"
+                            android:drawableEnd="@drawable/ic_add_black_24dp"
+                            android:paddingEnd="@dimen/d8"
+                            android:textAllCaps="false"
+                            android:editable="false"
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <Spinner
+                        android:id="@+id/etSubKategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="14dp"
+                        android:paddingBottom="5dp"
+                        android:visibility="gone"
+                        android:paddingTop="5dp"
+                        android:background="@drawable/border_round_white"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etJumlahPieces"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Jumlah Pieces"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/d16"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etHargaPieces"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Harga per Pieces"
+                        android:paddingStart="@dimen/d16"
+                        android:inputType="number"
+                        android:textAllCaps="false"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etStokAwal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Stok Awal"
+                        android:paddingStart="@dimen/d16"
+                        android:inputType="number"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <EditText
+                        android:id="@+id/etStok"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/border_round_white"
+                        android:hint="Stok"
+                        android:paddingStart="@dimen/d16"
+                        android:textAllCaps="false"
+                        android:inputType="number"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:visibility="gone"
+                        android:background="@android:color/transparent"/>
+
+                    <Switch
+                        android:id="@+id/switchStok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Gray"
+                        android:paddingStart="@dimen/d16"
+                        android:text="Is Daily Stock"
+                        tools:ignore="HardcodedText"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d15"
+                        android:background="@android:color/transparent"/>
+
+                    <LinearLayout
+                        android:id="@+id/btnTambah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_gradient"
+                        android:padding="@dimen/d16"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:text="SIMPAN"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+</LinearLayout>

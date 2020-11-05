@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:padding="@dimen/d16"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d8"
+        android:text="TAMBAH KATEGORI"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/etNamaKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        android:padding="@dimen/d12"
+        android:textSize="@dimen/d13"
+        android:background="@drawable/border_round_white"
+        android:hint="Nama Kategori"
+        android:textColor="@color/Black"/>
+
+    <Button
+        android:id="@+id/btnSimpanKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        android:textColor="@color/White"
+        android:background="@drawable/background_button"
+        android:layout_marginTop="@dimen/d16"/>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d55"
+    android:layout_alignParentTop="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:alpha="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d55">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/normal_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/hometoolbar_logo"-->
+<!--                            android:alpha="0.8"-->
+<!--                            android:scaleType="centerInside"-->
+<!--                            android:src="@drawable/selada_logo"-->
+<!--                            android:layout_width="@dimen/d150"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:layout_height="fill_parent"/>-->
+
+                        <ImageView
+                            android:id="@+id/hometoolbar_logo"
+                            android:alpha="1"
+                            android:scaleType="centerInside"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logo_bjb"
+                            android:layout_width="match_parent"
+                            android:visibility="visible"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/d6"
+                            android:paddingBottom="@dimen/d6"/>
+
+                        <LinearLayout
+                            android:id="@+id/layoutToolbarName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/toolbar_back"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                                android:layout_width="50dp"
+                                android:visibility="visible"
+                                android:layout_height="@dimen/d50"/>
+
+                            <TextView
+                                android:id="@+id/hometoolbar_title"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:textColor="#5F99DB"
+                                android:text="SELADA"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/s18"
+                                android:visibility="visible"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d30"
+                        android:layout_gravity="center|right">
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <!--android:layout_width="@dimen/d30"-->
+                        <!--android:layout_height="@dimen/d30"-->
+                        <!--android:src="@drawable/ic_artboard_1"-->
+                        <!--android:id="@+id/profile"-->
+                        <!--/>-->
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/Black"
+                            android:visibility="gone"
+                            android:text="Rp 250.000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Black"
+                            android:textSize="12sp"
+                            android:text="20 April 2019"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"></FrameLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

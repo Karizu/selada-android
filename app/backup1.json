@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "117303622568",
+    "firebase_url": "https://stagingpampasy.firebaseio.com",
+    "project_id": "stagingpampasy",
+    "storage_bucket": "stagingpampasy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117303622568:android:7516e0042cd5806f",
+        "android_client_info": {
+          "package_name": "com.boardinglabs.mireta.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117303622568-js3vmj058vpe8nvh836392d86okmnapa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boardinglabs.mireta.pos",
+            "certificate_hash": "fcda6566b762760c1a9cbf6656d120f3d47d202a"
+          }
+        },
+        {
+          "client_id": "117303622568-jlsfnf2fcs753htqciukkip289e4rbf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ZeWFzxjDDY8I4qsS3myUldQNCMBSE2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117303622568-jlsfnf2fcs753htqciukkip289e4rbf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

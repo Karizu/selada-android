@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_pink"
+    tools:context=".modul.selada.launcher.SeladaLaucherActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar_selada" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/d0"
+                    android:orientation="vertical"
+                    tools:ignore="ScrollViewSize"
+                    android:paddingBottom="@dimen/d12">
+
+                    <include
+                        layout="@layout/ardi_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:id="@+id/menuCekSaldo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/cek_saldo"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Cek\nSaldo"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuCekMutasi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/cek_mutasi"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Cek\nMutasi"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuSetorPinjaman"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/setor_pinjaman"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Setor\nPinjaman"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuSetorTabungan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/setor_tabungan"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Setor\nTabungan"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15">
+
+                        <LinearLayout
+                            android:id="@+id/menuTarikTunai"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/tarik_tunai"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Tarik\nTunai"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/menuVoidTarikTunai"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/void_tarik_tunai"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Void Tarik\nTunai"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/menuTransferSesama"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/transfer_sesama"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Transfer\nSesama"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/menuTransferAntarbank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/transfer_antarbank"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Transfer\nAntarbank"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_marginRight="@dimen/d15">
+
+                        <LinearLayout
+                            android:id="@+id/menuReprint"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d0"
+                            android:layout_marginRight="@dimen/d8">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/reprint"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Reprint"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/menuReportTransaksi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d2"
+                            android:layout_marginRight="@dimen/d2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/report_transaksi"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Report\nTransaksi"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/transfer_sesama"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Transfer\nSesama"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/d8"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:background="@drawable/bcg_menu2"
+                            android:layout_marginLeft="@dimen/d8"
+                            android:layout_marginRight="@dimen/d0">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingTop="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:layout_marginBottom="4dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/transfer_antarbank"
+                                    android:contentDescription="Icon Home" />
+
+                            </LinearLayout>
+
+                            <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Transfer\nAntarbank"
+                                android:lines="2"
+                                android:textStyle="normal"
+                                tools:targetApi="jelly_bean"
+                                android:textColor="#000"
+                                android:textSize="11sp"
+                                android:paddingBottom="6dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d16">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mireta_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="METODE PEMBAYARAN"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <Spinner
+                        android:id="@+id/spinnerPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d8"
+                        android:layout_marginBottom="@dimen/d8"
+                        android:visibility="gone"
+                        android:padding="@dimen/d16" />
+
+                    <com.boardinglabs.mireta.selada.component.fontview.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="METODE PEMBAYARAN"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        tools:ignore="HardcodedText" />
+
+                    <Spinner
+                        android:id="@+id/spinnerUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d8"
+                        android:layout_marginBottom="@dimen/d8"
+                        android:visibility="gone"
+                        android:padding="@dimen/d16" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutJumlahBayar"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:background="#FAFAFA"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/greyish"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="JUMLAH TOPUP"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:padding="@dimen/d8"
+                            tools:ignore="HardcodedText" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/greyish"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:layout_marginTop="@dimen/d8"
+                            android:weightSum="2">
+
+                            <CheckedTextView
+                                android:id="@+id/checked1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/d8"
+                                android:layout_marginEnd="@dimen/d4"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:drawablePadding="15dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="Uang Pas"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                            <CheckedTextView
+                                android:id="@+id/checked2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/d8"
+                                android:layout_marginEnd="@dimen/d4"
+                                android:padding="12dp"
+                                android:drawablePadding="12dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="5.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                            <CheckedTextView
+                                android:id="@+id/checked3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/d4"
+                                android:layout_marginEnd="@dimen/d8"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:gravity="center"
+                                android:drawablePadding="15dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="10.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <CheckedTextView
+                                android:id="@+id/checked4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/d8"
+                                android:layout_marginEnd="@dimen/d4"
+                                android:padding="12dp"
+                                android:drawablePadding="12dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="20.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                            <CheckedTextView
+                                android:id="@+id/checked5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/d4"
+                                android:layout_marginEnd="@dimen/d8"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:gravity="center"
+                                android:drawablePadding="15dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="50.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <CheckedTextView
+                                android:id="@+id/checked6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/d8"
+                                android:layout_marginEnd="@dimen/d4"
+                                android:padding="12dp"
+                                android:drawablePadding="12dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="100.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                            <CheckedTextView
+                                android:id="@+id/checked8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/d4"
+                                android:layout_marginEnd="@dimen/d8"
+                                android:layout_weight="1"
+                                android:padding="12dp"
+                                android:gravity="center"
+                                android:drawablePadding="15dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="500.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <CheckedTextView
+                                android:id="@+id/checked9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="@dimen/d4"
+                                android:layout_marginEnd="@dimen/d8"
+                                android:padding="12dp"
+                                android:drawablePadding="12dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/list_item_selector"
+                                android:checkMark="@drawable/background_check_mark"
+                                android:text="1.000.000"
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <CheckedTextView
+                            android:id="@+id/checked7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/d8"
+                            android:layout_marginEnd="@dimen/d8"
+                            android:padding="12dp"
+                            android:drawablePadding="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/list_item_selector"
+                            android:checkMark="@drawable/background_check_mark"
+                            android:text="Jumlah Lain"
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText"
+                            android:visibility="gone"/>
+
+                        <EditText
+                            android:id="@+id/etNominalBayar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d6"
+                            android:layout_marginStart="@dimen/d16"
+                            android:layout_marginEnd="@dimen/d16"
+                            android:visibility="gone"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/background_field"
+                            android:hint="Jumlah Lain"
+                            android:padding="@dimen/d10"
+                            android:textColor="@color/Black"
+                            android:textSize="13sp"
+                            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnLanjut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        android:text="LANJUT"
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_button"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

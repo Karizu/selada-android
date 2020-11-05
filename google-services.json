@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "837660846062",
+    "firebase_url": "https://doomo-9516d.firebaseio.com",
+    "project_id": "doomo-9516d",
+    "storage_bucket": "doomo-9516d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837660846062:android:487405e51a5a79c8",
+        "android_client_info": {
+          "package_name": "com.boardinglabs.mireta.selada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837660846062-kl7rt203pptemm7o5jdk6jggqqs1bvdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7mQumr_xqtXryOqrv8ITjYkSqYPrPMg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837660846062-kl7rt203pptemm7o5jdk6jggqqs1bvdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

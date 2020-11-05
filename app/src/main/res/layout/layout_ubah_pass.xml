@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_round_white"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="@dimen/d16">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="UBAH PASSWORD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mireta_blue"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btnClose"
+                    android:layout_width="@dimen/d18"
+                    android:layout_height="@dimen/d18"
+                    android:src="@drawable/close"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/d16">
+
+                <Spinner
+                    android:id="@+id/spinnerBooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingStart="14dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"
+                    android:paddingTop="5dp"
+                    android:background="@drawable/border_round_white"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/etPasswordLama"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Password Lama"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/etPasswordBaru"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Password Baru"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/etPasswordBaruConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Konfirmasi Password Baru"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d15"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/border_round_white"
+                    android:hint="Deskripsi"
+                    android:paddingStart="@dimen/d16"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textSize="13sp"
+                    tools:ignore="HardcodedText" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerMerek"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/spinnerKategori"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d15"-->
+                <!--android:background="@android:color/transparent"/>-->
+
+                <!--<Spinner-->
+                <!--android:id="@+id/etSubKategori"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingStart="14dp"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:background="@drawable/border_round_white"-->
+                <!--tools:ignore="HardcodedText" />-->
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSimpanPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginBottom="@dimen/d8"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:text="Simpan"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

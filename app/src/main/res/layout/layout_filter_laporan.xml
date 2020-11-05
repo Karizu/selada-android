@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/d16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter berdasarkan:"
+            android:textSize="@dimen/d16"
+            android:textColor="@color/mireta_blue"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TRANSAKSI BERHASIL"
+                android:textColor="@color/Green"
+                android:background="@drawable/background_field"
+                android:padding="@dimen/d8"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d6"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TRANSAKSI PENDING"
+                android:textColor="@color/mireta_red"
+                android:background="@drawable/background_field"
+                android:padding="@dimen/d8"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settlement"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settlement"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d8"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/ctvSettleAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d15"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_selector"
+                        android:checkMark="@drawable/background_check_mark"
+                        android:text="Semua"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="1dp"/>
+
+                    <CheckedTextView
+                        android:id="@+id/ctvSettleTrue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d15"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_selector"
+                        android:checkMark="@drawable/background_check_mark"
+                        android:text="Sudah Settle"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="1dp"/>
+
+                    <CheckedTextView
+                        android:id="@+id/ctvSettleFalse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d15"
+                        android:gravity="center"
+                        android:background="@drawable/list_item_selector"
+                        android:checkMark="@drawable/background_check_mark"
+                        android:text="Belum Settle"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="1dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:textColor="@color/white"
+            android:text="Simpan"
+            android:background="@drawable/background_button"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d8"/>
+
+        <Button
+            android:id="@+id/btnResetFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Reset Filter"
+            android:background="@drawable/background_button"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>
