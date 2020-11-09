@@ -81,6 +81,8 @@ public class Constant {
 
     public static final String KEY_CODE = "dev-selada";
 
+    public static final String KEY_VERSION = "V2";
+
     public static final String SERVICE_PULSA = "1";
     public static final String SERVICE_PAKET_DATA = "2";
     public static final String SERVICE_PLN = "3";

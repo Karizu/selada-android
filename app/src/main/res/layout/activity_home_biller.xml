@@ -83,7 +83,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/bcg_menu2"
                             android:gravity="center"
-                            android:visibility="gone"
+                            android:visibility="visible"
                             android:orientation="vertical"
                             android:padding="@dimen/d8">
 

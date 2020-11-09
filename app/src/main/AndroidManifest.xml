@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.boardinglabs.mireta.selada">
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:name=".MiretaPOSApplication"
         android:allowBackup="true"

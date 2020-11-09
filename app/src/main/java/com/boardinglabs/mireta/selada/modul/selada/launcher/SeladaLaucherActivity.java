@@ -525,7 +525,7 @@ public class SeladaLaucherActivity extends AppCompatActivity implements CommonIn
 
 //                mPresenter.paySeladaTransaction(serviceId, mid, mobileNumber, nominal, amount, stan);
                 Toast.makeText(SeladaLaucherActivity.this, "Transaksi anda sedang dalam proses", Toast.LENGTH_LONG).show();
-                ApiSelada.apiInterface().createSeladaTrx(serviceId, mid, mobileNumber, nominal, amount, "", stan, "Bearer "+PreferenceManager.getSessionToken(), encodeToString(rToken), encodeToString(keyGen), Constant.KEY_CODE).enqueue(new Callback<SeladaTransactionResponse>() {
+                ApiSelada.apiInterface().createSeladaTrx(serviceId, mid, mobileNumber, nominal, amount, "", stan, "Bearer "+PreferenceManager.getSessionToken(), encodeToString(rToken), encodeToString(keyGen), Constant.KEY_VERSION).enqueue(new Callback<SeladaTransactionResponse>() {
                     @Override
                     public void onResponse(Call<SeladaTransactionResponse> call, Response<SeladaTransactionResponse> response) {
                         try {

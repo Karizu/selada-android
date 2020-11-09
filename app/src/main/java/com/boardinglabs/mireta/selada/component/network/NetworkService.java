@@ -116,7 +116,8 @@ public interface NetworkService {
                                             @Query("category") String cat,
                                             @Header("Authorization") String token,
                                             @Header("user-key") String rToken,
-                                            @Header("user-key-gen") String keyGen);
+                                            @Header("user-key-gen") String keyGen,
+                                            @Header("version") String key);
 
     @GET("services")
     Observable<com.boardinglabs.mireta.selada.component.network.response.ServicesResponse>
@@ -125,7 +126,7 @@ public interface NetworkService {
                      @Header("Authorization") String token,
                      @Header("user-key") String rToken,
                      @Header("user-key-gen") String keyGen,
-                     @Header("key-code") String key);
+                     @Header("version") String key);
 
 //    @Headers("Content-Type: text/plain")
 //    @POST("transactions/checkInquiry")
@@ -135,7 +136,7 @@ public interface NetworkService {
 //                                                 @Header("user-key-gen") String keyGen);
 
     @FormUrlEncoded
-    @POST("staging/transactions/checkInquiry")
+    @POST("transactions/checkInquiry")
     Observable<SPIInquiryResponse> spiCMDInquiry(@Query("cmd") String cmd, @Query("nop") String nop, @Query("voc") String voc,
                                                  @Field("cmd") String cmdField, @Field("nop") String nopField, @Field("voc") String vocField,
                                                  @Header("Authorization") String token,
@@ -144,7 +145,7 @@ public interface NetworkService {
                                                  @Header("key-code") String key);
 
     @FormUrlEncoded
-    @POST("staging/transactions/checkInquiry")
+    @POST("transactions/checkInquiry")
     Observable<ResponseBody> spiCMDInquiryResponse(@Query("cmd") String cmd, @Query("nop") String nop, @Query("voc") String voc,
                                                    @Field("cmd") String cmdField, @Field("nop") String nopField, @Field("voc") String vocField,
                                                    @Header("Authorization") String token,
@@ -160,7 +161,7 @@ public interface NetworkService {
 //                                                     @Header("user-key-gen") String keyGen);
 
     @FormUrlEncoded
-    @POST("staging/transactions/checkInquiry")
+    @POST("transactions/checkInquiry")
     Observable<SPIInquiryResponse> spiCMDInquiryBPJS(@Query("cmd") String cmd, @Query("nop") String nop, @Query("bln") String voc,
                                                      @Field("cmd") String cmdField, @Field("nop") String nopField, @Field("bln") String vocField,
                                                      @Header("Authorization") String token,
@@ -185,7 +186,7 @@ public interface NetworkService {
             @Header("key-code") String key);
 
     @FormUrlEncoded
-    @POST("staging/transactions")
+    @POST("transactions")
     Call<SeladaTransactionResponse> createSeladaTrx(
             @Field("service_id") String service_id,
             @Field("merchant_id") String merchant_id,
@@ -197,7 +198,7 @@ public interface NetworkService {
             @Header("Authorization") String token,
             @Header("user-key") String rToken,
             @Header("user-key-gen") String keyGen,
-            @Header("key-code") String key);
+            @Header("version") String key);
 
     @FormUrlEncoded
     @POST("transactionsppob/inquiry")

@@ -7,6 +7,7 @@ import com.boardinglabs.mireta.selada.component.network.oldresponse.ServicesResp
 import com.boardinglabs.mireta.selada.component.network.oldresponse.TransactionResponse;
 import com.boardinglabs.mireta.selada.component.network.response.ApiResponse;
 import com.boardinglabs.mireta.selada.component.network.response.SPIInquiryResponse;
+import com.boardinglabs.mireta.selada.component.util.Constant;
 import com.boardinglabs.mireta.selada.component.util.PreferenceManager;
 import com.boardinglabs.mireta.selada.component.util.Utils;
 
@@ -32,7 +33,7 @@ public class PurchaseInteractorImpl implements PurchaseInteractor {
 
     @Override
     public Observable<com.boardinglabs.mireta.selada.component.network.response.ServicesResponse> getSeladaServices(String cat, String provider ,String rToken, String keyGen, String serialNumber) {
-        return mService.getSeladaService(cat, provider, bearerToken, rToken, keyGen, key).subscribeOn(Schedulers.io())
+        return mService.getSeladaService(cat, provider, bearerToken, rToken, keyGen, Constant.KEY_VERSION).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .unsubscribeOn(Schedulers.io());
     }
@@ -81,7 +82,7 @@ public class PurchaseInteractorImpl implements PurchaseInteractor {
 
     @Override
     public Observable<ServicesResponse> getServices(String type, String amount, String no, String cat, String rToken, String keyGen, String serialNumber) {
-        return mService.getService(type, amount, no, cat, bearerToken, rToken, keyGen).subscribeOn(Schedulers.io())
+        return mService.getService(type, amount, no, cat, bearerToken, rToken, keyGen, Constant.KEY_VERSION).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .unsubscribeOn(Schedulers.io());
     }
